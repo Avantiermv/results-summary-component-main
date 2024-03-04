@@ -9,10 +9,10 @@
 }
 
 :root{
-    --cor1: hsl(0, 100%, 67%);
-    --cor2: hsl(39, 100%, 56%);
-    --cor3: hsl(166, 100%, 37%);
-    --cor4: hsl(234, 85%, 45%);
+    --cor1: hsla(0, 100%, 67%, 0.300);
+    --cor2: hsl(39, 100%, 56%, 0.300);
+    --cor3: hsl(166, 100%, 37%, 0.300);
+    --cor4: hsl(234, 85%, 45%, 0.300);
 
 
     --cor5: hsl(252, 100%, 67%);
@@ -36,7 +36,7 @@ body{
 }
 
 #block1{
-    background-color: var(--cor7);
+    background-color: var(--cor6);
     height: 400px;
     border-bottom-left-radius: 25px; 
     border-bottom-right-radius: 25px;
@@ -62,17 +62,26 @@ body{
 }
 
 #circle{
-    background-color: var(--cor5);
-    width: 150px;
-    height: 150px;
+    display: grid;
+    background-image: linear-gradient(to bottom, hsl(234, 85%, 45%), hsl(241, 81%, 54%));
+    width: 155px;
+    height: 155px;
     margin: auto;
     margin-bottom: 15px;
-    border-radius: 75px;
+    border-radius: 85px;
+    align-items: center;
 }
+
+
 
 #circle > h1{
     font-weight: 800;
     font-size: 50px;
+}
+
+#circle > p{
+    font-weight: 500;
+    font-size: 20px;
 }
 
 h2{
@@ -87,8 +96,12 @@ h2{
 #block2 > .blocks{
     display: flex;
     height: 60px;
-    width: 350px;
+    width: 300px;
     margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .blocks > img{
@@ -97,16 +110,71 @@ h2{
 }
 
 .blocks > .p1{
+    padding: 2px;
     margin-left: 15px;
     margin-right: 105px;
+    font-weight: bolder;
 }
 
 .blocks > .p2{
+    padding: 2px;
     margin-left: 15px;
     margin-right: 120px;
+    font-weight: bolder;
 }
 
+.blocks > p{
+    font-family: var(--font);
+}
 
+#pred{
+    color: hsl(0, 100%, 50%);
+}
+
+#myellow{
+    color: hsl(39, 100%, 50%);
+}
+
+#vgreen{
+    color: hsl(166, 100%, 50%);
+}
+
+#vblue{
+    color: hsl(234, 100%, 50%);
+}
+
+#red{
+    background-color: var(--cor1);
+}
+
+#yellow{
+    background-color: var(--cor2);
+}
+
+#green{
+    background-color: var(--cor3);
+}
+
+#blue{
+    background-color: var(--cor4);
+}
+
+button{
+    background-color: var(--cor12);
+    width: 350px;
+    height: 60px;
+    margin: 39px;
+    border-style: none;
+    border-radius: 30px;
+    font-family: var(--font);
+    font-size: 18px;
+    color: var(--cor10);
+}
+
+button:hover{
+    background-image: linear-gradient(to bottom,  hsl(234, 85%, 45%), hsl(241, 81%, 54%));
+    color: var(--cor9)
+}
 
 
 
