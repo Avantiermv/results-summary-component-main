@@ -36,7 +36,7 @@ body{
 }
 
 #block1{
-    background-color: var(--cor6);
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
     height: 400px;
     border-bottom-left-radius: 25px; 
     border-bottom-right-radius: 25px;
@@ -165,6 +165,11 @@ h2{
     background-color: var(--cor4);
 }
 
+.p{
+    color: var(--cor12);
+    font-weight: 500;
+}
+
 #butão{
     width: 350px;
     height: 60px;
@@ -215,7 +220,7 @@ button:hover{
         width: 500px;
         margin: 10px;
         border-radius: 15px;
-        box-shadow: 19px 25px 30px -20px var(--cor6);
+        box-shadow: 27px 26px 60px -30px var(--cor6);
     }
 
     button{
